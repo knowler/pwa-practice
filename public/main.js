@@ -1,3 +1,12 @@
+if ("serviceWorker" in navigator) {
+	try {
+		const registration = await navigator.serviceWorker.register("/service-worker.js");
+		console.log("Success:", registration);
+	} catch (error) {
+		console.error(`Service worker registration failed: ${error}`);
+	}
+} else console.log("Service worker not supported");
+
 const [form] = document.forms;
 
 let message = localStorage.getItem("message");
@@ -12,3 +21,12 @@ form.addEventListener("submit", event => {
 
 	localStorage.setItem("message", formData.get("message"));
 });
+
+const bookmark = localStorage.getItem("bookmark");
+
+if (bookmark) {
+	const a = document.createElement("a");
+	a.href = bookmark;
+	a.textContent = "Bookmarked";
+	document.body.append(a);
+}
