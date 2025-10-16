@@ -1,3 +1,5 @@
+import localforage from "https://esm.sh/localforage";
+
 const [form] = document.forms;
 
 let message = localStorage.getItem("message");
@@ -13,7 +15,7 @@ form.addEventListener("submit", event => {
 	localStorage.setItem("message", formData.get("message"));
 });
 
-const bookmark = localStorage.getItem("bookmark");
+const bookmark = await localforage.getItem("bookmark");
 
 if (bookmark) {
 	const a = document.createElement("a");
