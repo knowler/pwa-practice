@@ -3,9 +3,7 @@ import { serveStatic } from "jsr:@hono/hono/deno";
 
 const app = new Hono();
 
-app.post("/share", async (c, next) => {
-	return c.redirect("/");
-});
+app.get("/share", serveStatic({ path: "./public/share.html" }));
 
 app.get("*", serveStatic({ root: "./public" }));
 
