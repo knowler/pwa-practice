@@ -1,6 +1,7 @@
 :root {
 	font-family: system-ui;
 	font-feature-settings: "ss06";
+	background-color: #111;
 }
 
 body {

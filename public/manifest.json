@@ -4,8 +4,8 @@
 	"display_override": ["window-controls-overlay"],
 	"display": "standalone",
 	"orientation": "landscape",
-	"theme_color": "Canvas",
-	"background_color": "Canvas",
+	"theme_color": "#111",
+	"background_color": "#111",
 	"icons": [
 		{
 			"src": "icons/512.png",
