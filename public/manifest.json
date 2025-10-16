@@ -18,5 +18,11 @@
 		"params": {
 			"url": "link"
 		}
-	}
+	},
+	"shortcuts": [
+		{
+			"name": "Bookmark",
+			"url": "/share"
+		}
+	]
 }
