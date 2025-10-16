@@ -5,6 +5,6 @@
 
 @media (display-mode: standalone) {
 	body {
-		padding-block-start: env(safe-area-inset-top);
+		padding-block-start: env(titlebar-area-height);
 	}
 }
