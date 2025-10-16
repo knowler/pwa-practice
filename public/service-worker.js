@@ -8,12 +8,17 @@ self.addEventListener("fetch", event => {
 	event.respondWith(handleShare(event));
 });
 
+self.addEventListener("install", async event => {
+	const {default: localforage} = import("https://esm.sh/localforage")
+	console.log(localforage);
+});
+
 async function handleShare(event) {
 	console.info("Handling share");
 	const formData = await event.request.formData();
 	const link = formData.get("link") || "";
 
-	localStorage.setItem("bookmark", link);
+	// Persist to IndexedDB
 
 	return Response.redirect("/", 303);
 }
