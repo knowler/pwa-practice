@@ -1,12 +1,3 @@
-if ("serviceWorker" in navigator) {
-	try {
-		const registration = await navigator.serviceWorker.register("/service-worker.js");
-		console.log("Success:", registration);
-	} catch (error) {
-		console.error(`Service worker registration failed: ${error}`);
-	}
-} else console.log("Service worker not supported");
-
 const [form] = document.forms;
 
 let message = localStorage.getItem("message");
