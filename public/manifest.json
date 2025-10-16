@@ -1,6 +1,7 @@
 {
 	"name": "Practice PWA",
 	"start_url": "/",
+	"display_override": ["fullscreen", "minimal-ui"],
 	"display": "standalone",
 	"icons": [
 		{
