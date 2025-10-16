@@ -1,5 +1,7 @@
 import localforage from "https://esm.sh/localforage";
 
+console.log(localforage);
+
 self.addEventListener("fetch", event => {
 	if (event.request.method !== "POST") {
 		console.info("Skipping post request", event.request);

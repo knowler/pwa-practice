@@ -22,4 +22,4 @@ if (bookmark) {
 	a.href = bookmark;
 	a.textContent = "Bookmarked";
 	document.body.append(a);
-}
+} else console.log("no bookmark");
