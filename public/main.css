@@ -1,0 +1,5 @@
+@media (display-mode: standalone) {
+	body {
+		padding-block-start: env(safe-area-inset-top);
+	}
+}
