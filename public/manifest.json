@@ -6,6 +6,7 @@
 	"orientation": "landscape",
 	"theme_color": "#111",
 	"background_color": "#111",
+	"launch_handler": "navigate-existing",
 	"icons": [
 		{
 			"src": "icons/512.png",
