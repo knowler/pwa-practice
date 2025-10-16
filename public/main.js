@@ -21,5 +21,6 @@ if (bookmark) {
 	const a = document.createElement("a");
 	a.href = bookmark;
 	a.textContent = "Bookmarked";
+	a.target = "_blank";
 	document.body.append(a);
 } else console.log("no bookmark");
