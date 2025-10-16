@@ -1,7 +1,6 @@
 {
 	"name": "Practice PWA",
 	"start_url": "/",
-	"display_override": ["window-controls-overlay"],
 	"display": "standalone",
 	"orientation": "landscape",
 	"theme_color": "#111",
