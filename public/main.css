@@ -1,3 +1,8 @@
+:root {
+	font-family: system-ui;
+	font-feature-settings: "ss06";
+}
+
 @media (display-mode: standalone) {
 	body {
 		padding-block-start: env(safe-area-inset-top);
