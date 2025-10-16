@@ -7,4 +7,11 @@
 body {
 	transition: padding 0.2s ease;
 	padding-block-start: env(titlebar-area-height);
+	padding-inline: 16px;
+	padding-block-end: 16px;
+	margin: 0;
+}
+
+h1 {
+	margin-block-start: 0;
 }
